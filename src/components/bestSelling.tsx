@@ -4,12 +4,26 @@ import BestSellingCard from './shared/bestSellingCard';
 const BestSelling = () => {
   const bestSell = [
     {
-      src:"../../../public/" ,
+      src:"/public/women-gray-button-shirt.webp" ,
       alt:"women gray button shirt",
       title:"Gray  Button Shirt",
-      description:"Gray  Button Shirt",
+      description:"Decent Shirt to Sleek Your Looks",
       price:150,
-    }
+    },
+    {
+      src:"/public/brown-silk-top0.jpeg" ,
+      alt:"women brown silk top",
+      title:"Brown Silk Top",
+      description:"Elegant Tops For Women",
+      price:170,
+    },
+    {
+      src:"/public/white-glittered-peep-toe-heeled-shoes.avif" ,
+      alt:"White Glittered Peep Toe Heels",
+      title:"White Glittered Peep Toe Heels",
+      description:"Top Notch Shoes For Women",
+      price:170,
+    },
   ]
   return (
     <section className='mb-[50px] md:mb-[100px]'>
@@ -25,8 +39,16 @@ const BestSelling = () => {
 {/* best selling products */}
 <div className='flex flex-wrap justify-center gap-5'></div>
 
-
-
+{
+  bestSell.map((items)=>(
+    <BestSellingCard 
+    src={items.src}
+    alt={items.alt} 
+    title={items.title}
+    description={items.description} 
+    price={items.price}/>
+  ))
+}
 </div>
       </section>
   )

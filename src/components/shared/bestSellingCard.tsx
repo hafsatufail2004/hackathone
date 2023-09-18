@@ -6,7 +6,7 @@ import { FaHeart ,FaShoppingCart } from "react-icons/fa"
 const BestSellingCard = (
     {src,alt,title,description,price}:
     {
-        src:StaticImageData,
+        src:StaticImageData | string,
         alt:string,
         title:string,
         description:string,
