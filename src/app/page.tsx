@@ -1,8 +1,8 @@
-import Services from "@/components/services";
-import Hero from "../components/hero";
-import Promotion from "@/components/promotion";
-import Catogery from "@/components/catogery";
-import BestSelling from "@/components/bestSelling";
+import Services from "../../components/services";
+import Hero from "../../components/hero";
+import Promotion from "../../components/promotion";
+import Catogery from "../../components/catogery";
+import BestSelling from "../../components/bestSelling";
 
 export default function Home() {
   return (

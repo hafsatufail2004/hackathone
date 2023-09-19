@@ -1,6 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 import Link from "next/link"
+import sweater from "../public/aweater.jpeg"
+import graypant from "../public/gray-pant.avif"
+import leporedprintedsidezipboots from "../public/leporedprintedsidezipboots.avif"
+import accessories from "../public/accessories.avif"
 
 const Catogery = () => {
   return (
@@ -19,7 +23,7 @@ const Catogery = () => {
         {/*1st catogery tops*/}
         <div className='mb-7 lg:mb-0 overflow-hidden z-10 mx-auto group relative'>
         <Link href={"/"}>
-          <Image src={require("../../public/aweater.jpeg")}
+          <Image src={sweater}
            alt='tops' 
            height={350} 
            width={350}
@@ -36,7 +40,7 @@ const Catogery = () => {
   {/*2nd catogery pants*/}
         <div className='mb-7 lg:mb-0 overflow-hidden z-10 mx-auto group relative'>
         <Link href={"/"}>
-          <Image src={require("../../public/gray-pant.avif")}
+          <Image src={graypant}
            alt='pants' 
            height={350} 
            width={350}
@@ -52,7 +56,7 @@ const Catogery = () => {
   {/*3rd catogery shoes*/}
         <div className='mb-7 lg:mb-0 overflow-hidden z-10 mx-auto group relative'>
         <Link href={"/"}>
-          <Image src={require("../../public/leporedprintedsidezipboots.avif")}
+          <Image src={leporedprintedsidezipboots}
            alt='shoes' 
            height={350} 
            width={350}
@@ -69,7 +73,7 @@ const Catogery = () => {
   {/*4th catogery accessories*/}
         <div className='mb-7 lg:mb-0 overflow-hidden z-10 mx-auto group relative'>
         <Link href={"/"}>
-          <Image src={require("../../public/accessories.avif")}
+          <Image src={accessories}
            alt='accessories' 
            height={350} 
            width={350}

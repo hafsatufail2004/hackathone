@@ -1,28 +1,29 @@
 import React from 'react'
 import BestSellingCard from './shared/bestSellingCard';
 
+
 const BestSelling = () => {
   const bestSell = [
     {
-      src:"/public/women-gray-button-shirt.webp" ,
+      src:"/women-gray-button-shirt" ,
       alt:"women gray button shirt",
       title:"Gray  Button Shirt",
-      description:"Decent Shirt to Sleek Your Looks",
-      price:150,
+      description:"Best Quality Tops for Women",
+      price:200,
     },
     {
-      src:"/public/brown-silk-top0.jpeg" ,
+      src:"/brown-silk-top0" ,
       alt:"women brown silk top",
       title:"Brown Silk Top",
       description:"Elegant Tops For Women",
       price:170,
     },
     {
-      src:"/public/white-glittered-peep-toe-heeled-shoes.avif" ,
+      src:"/white-glittered-peep-toe-heeled-shoes" ,
       alt:"White Glittered Peep Toe Heels",
       title:"White Glittered Peep Toe Heels",
       description:"Top Notch Shoes For Women",
-      price:170,
+      price:150,
     },
   ]
   return (
@@ -35,13 +36,14 @@ const BestSelling = () => {
         <div className="flex mt-2 justify-center">
           <div className="w-16 h-1 rounded-full bg-myOrange inline-flex" />
         </div>
-   
+        </div>
+        
 {/* best selling products */}
-<div className='flex flex-wrap justify-center gap-5'></div>
-
+<div className='flex flex-wrap justify-center gap-5'>
 {
-  bestSell.map((items)=>(
+  bestSell.map((items,i)=>(
     <BestSellingCard 
+    key={i}
     src={items.src}
     alt={items.alt} 
     title={items.title}

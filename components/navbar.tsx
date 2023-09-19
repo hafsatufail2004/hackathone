@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavigationMenuDemo } from "./navlinks";
-import logo from "../../public/logo.webp"
+import logo from "../public/logo.webp"
 import Image from "next/image";
 
 const Navbar = () => {
@@ -18,27 +18,27 @@ const Navbar = () => {
       <li tabIndex={0}>
         <details>
           <summary>Women</summary>
-          <ul className="p-2">
+          <ul className="p-2 ">
             <li>
-                <Link href="/">Tops</Link>
+                <Link href="/tops">Tops</Link>
             </li>
             <li>
-                <Link href="/">Pants</Link>
+                <Link href="/pants">Pants</Link>
             </li>
             <li>
-                <Link href="/">Shoes</Link>
+                <Link href="/shoes">Shoes</Link>
             </li>
             <li>
-                <Link href="/">Accessories/Jewelry</Link>
+                <Link href="/accessories">Accessories/Jewelry</Link>
             </li>
           </ul>
         </details>
       </li>
       <li>
-        <Link href="/">Contacts</Link>
+        <Link href="/contact">Contacts</Link>
         </li>
         <li>
-        <Link href="/">About</Link>
+        <Link href="/about">About</Link>
         </li>
     </ul>
 

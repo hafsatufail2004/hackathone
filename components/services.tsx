@@ -1,5 +1,8 @@
 import Image from 'next/image';
 import React from 'react'
+import payback from "../public/payback.webp"
+import service from "../public/service1.webp"
+import van from "../public/vans.webp"
 
 const Services = () => {
   return (
@@ -18,7 +21,7 @@ const Services = () => {
       <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
         <div className="group p-4 mx-auto lg:w-1/3 flex flex-col text-center items-center">
           <div className="w-20 h-20 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
-         <Image src={require("../../public/vans.webp")} alt='delivery' width={100} height={100} className='w-20 h-20'/>
+         <Image src={van} alt='delivery' width={100} height={100} className='w-20 h-20'/>
           </div>
           <div className="flex-grow">
             <h2 className="capitalize scroll-m-20 text-lg group-hover:text-myOrange duration-300 font-bold tracking-tight lg:text-xl text-myBlackHead mb-1 md:mb-3">
@@ -34,7 +37,7 @@ const Services = () => {
       {/* 24/7 services*/}
         <div className="group p-4 mx-auto lg:w-1/3 flex flex-col text-center items-center">
           <div className="w-20 h-20 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
-         <Image src={require("../../public/service1.webp")} alt='delivery' width={100} height={100} className='w-20 h-20'/>
+         <Image src={service} alt='delivery' width={100} height={100} className='w-20 h-20'/>
           </div>
           <div className="flex-grow">
             <h2 className="capitalize scroll-m-20 text-lg group-hover:text-myOrange duration-300 font-bold tracking-tight lg:text-xl text-myBlackHead mb-1 md:mb-3">
@@ -49,7 +52,7 @@ const Services = () => {
       {/* money payback*/}
     <div className="group p-4 mx-auto lg:w-1/3 flex flex-col text-center items-center">
           <div className="w-20 h-20 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
-         <Image src={require("../../public/payback.webp")} alt='delivery' width={100} height={100} className='w-20 h-20'/>
+         <Image src={payback} alt='delivery' width={100} height={100} className='w-20 h-20'/>
           </div>
           <div className="flex-grow">
             <h2 className="capitalize scroll-m-20 text-lg group-hover:text-myOrange duration-300 font-bold tracking-tight lg:text-xl text-myBlackHead mb-1 md:mb-3">

@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import logo from "../../public/logo.webp"
+import logo from "../public/logo.webp"
 import Link from 'next/link'
 
 const Footer = () => {

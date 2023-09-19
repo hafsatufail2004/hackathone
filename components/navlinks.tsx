@@ -18,25 +18,25 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Tops",
-    href: "/",
+    href: "/tops",
     description:
       "A Collection of beautiful tops for your wardrobe to sleek your looks",
   },
   {
     title: "Pants",
-    href: "/",
+    href: "/pants",
     description:
       "A Collection of beautiful pants for your wardrobe to sleek your looks",
   },
   {
     title: "Accessories/Jewelry",
-    href: "/",
+    href: "/accessories",
     description:
       "A Collection of beautiful jewelry for your wardrobe to sleek your looks",
   },
   {
     title: "Shoes",
-    href: "/",
+    href: "/shoes",
     description:
       "A Collection of top-notch shoes for your wardrobe to sleek your looks",
   },
@@ -48,7 +48,7 @@ export function NavigationMenuDemo() {
       <NavigationMenuList>
     
       <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
           Home
             </NavigationMenuLink>
@@ -60,20 +60,21 @@ export function NavigationMenuDemo() {
           <NavigationMenuContent>
             <ul className="grid w-[400px] bg-myWhite gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
+                <Link
+                key={component.title}
+                title={component.title}
+                href={component.href}>
+                <ListItem>
                   {component.description}
                 </ListItem>
+                </Link>
               ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/about" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
             About
             </NavigationMenuLink>
@@ -81,7 +82,7 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
          Contact
             </NavigationMenuLink>
