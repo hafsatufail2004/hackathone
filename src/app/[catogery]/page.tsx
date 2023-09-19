@@ -4,25 +4,31 @@ import BestSellingCard from '../../../components/shared/bestSellingCard';
 const Catogery = () => {
   const bestSell = [
     {
-      src:"/women-gray-button-shirt" ,
+      src:"/women-gray-button-shirt.webp" ,
       alt:"women gray button shirt",
       title:"Gray  Button Shirt",
       description:"Best Quality Tops for Women",
       price:200,
+      catogery:"tops",
+      slug:"gray-button-shirt",
     },
     {
-      src:"/brown-silk-top0" ,
+      src:"/brown-silk-top0.jpeg",
       alt:"women brown silk top",
       title:"Brown Silk Top",
       description:"Elegant Tops For Women",
       price:170,
+      catogery:"tops",
+      slug:"brown-silk-top",
     },
     {
-      src:"/white-glittered-peep-toe-heeled-shoes" ,
+      src:"/white-glittered-peep-toe-heeled-shoes.avif" ,
       alt:"White Glittered Peep Toe Heels",
       title:"White Glittered Peep Toe Heels",
       description:"Top Notch Shoes For Women",
       price:150,
+      catogery:"shoes",
+      slug:"white-glittered-peep-toe-heeled",
     },
   ]
   return (
@@ -47,7 +53,10 @@ const Catogery = () => {
     alt={items.alt} 
     title={items.title}
     description={items.description} 
-    price={items.price}/>
+    price={items.price}
+    catogery={items.catogery}
+    slug={items.slug}
+    />
   ))
 }
 </div>

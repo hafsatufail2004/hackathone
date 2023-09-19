@@ -62,9 +62,8 @@ export function NavigationMenuDemo() {
               {components.map((component) => (
                 <Link
                 key={component.title}
-                title={component.title}
                 href={component.href}>
-                <ListItem>
+                <ListItem    title={component.title}>
                   {component.description}
                 </ListItem>
                 </Link>

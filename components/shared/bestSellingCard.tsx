@@ -1,21 +1,24 @@
 import React from 'react'
 import Image, { StaticImageData } from 'next/image';
 import { Button } from '../ui/button';
+import Link from 'next/link';
 import { FaHeart ,FaShoppingCart } from "react-icons/fa"
 
 const BestSellingCard = (
-    {src,alt,title,description,price}:
+    {src,alt,title,description,price,catogery,slug}:
     {
-        src:StaticImageData | string,
-        alt:string,
-        title:string,
-        description:string,
-        price:number,
+        src:StaticImageData | string;
+        alt:string;
+        title:string;
+        description:string;
+        price:number;
+        catogery:string;
+        slug:string;
     }) => {
   return  <section className="w-[350px] h-[35rem] p-4 mx-auto shadow-md rounded-xl group relative">
- 
+ <Link href={`/${catogery}/${slug}`}>
  {/* image div */}
-<div  className='h-[23rem] rounded-md ' >
+<div  className='h-[23rem] block overflow-hidden rounded ' >
     <Image
      src={src}
       alt={alt}
@@ -38,7 +41,7 @@ const BestSellingCard = (
     <p className="scroll-m-20 mt-2 tracking-tight text-base text-myBlackHead font-sans font-semibold line-clamp-1">${price}</p>
      )}
     </div>
-
+    </Link>
     {/* button div start*/}
    <div className='flex justify-between'>
    

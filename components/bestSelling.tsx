@@ -10,6 +10,8 @@ const BestSelling = () => {
       title:"Gray  Button Shirt",
       description:"Best Quality Tops for Women",
       price:200,
+      catogery:"tops",
+      slug:"gray-button-shirt",
     },
     {
       src:"/brown-silk-top0" ,
@@ -17,6 +19,8 @@ const BestSelling = () => {
       title:"Brown Silk Top",
       description:"Elegant Tops For Women",
       price:170,
+      catogery:"tops",
+      slug:"brown-silk-top",
     },
     {
       src:"/white-glittered-peep-toe-heeled-shoes" ,
@@ -24,6 +28,8 @@ const BestSelling = () => {
       title:"White Glittered Peep Toe Heels",
       description:"Top Notch Shoes For Women",
       price:150,
+      catogery:"shoes",
+      slug:"white-glitter-peep-toe-heels",
     },
   ]
   return (
@@ -48,7 +54,10 @@ const BestSelling = () => {
     alt={items.alt} 
     title={items.title}
     description={items.description} 
-    price={items.price}/>
+    price={items.price}
+    catogery={items.catogery}
+    slug={items.slug}
+    />
   ))
 }
 </div>
